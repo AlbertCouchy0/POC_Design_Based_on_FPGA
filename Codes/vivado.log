@@ -3,16 +3,16 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Feb 24 23:33:07 2025
-# Process ID: 21204
-# Current directory: X:/1-Projiect/3-FPGA/POC_Design
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4712 X:\1-Projiect\3-FPGA\POC_Design\POC.xpr
-# Log file: X:/1-Projiect/3-FPGA/POC_Design/vivado.log
-# Journal file: X:/1-Projiect/3-FPGA/POC_Design\vivado.jou
+# Start of session at: Tue Feb 25 23:24:10 2025
+# Process ID: 17580
+# Current directory: X:/2-Github/POC_Design_Based_on_FPGA/Codes
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2440 X:\2-Github\POC_Design_Based_on_FPGA\Codes\POC.xpr
+# Log file: X:/2-Github/POC_Design_Based_on_FPGA/Codes/vivado.log
+# Journal file: X:/2-Github/POC_Design_Based_on_FPGA/Codes\vivado.jou
 # Running On: SaverZY, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 68446 MB
 #-----------------------------------------------------------
 start_gui
-open_project X:/1-Projiect/3-FPGA/POC_Design/POC.xpr
+open_project X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -69,81 +69,218 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-INFO: [Common 17-344] 'open_project' was cancelled
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 24 23:33:29 2025...
-w 19-234] Refreshing IP repositories
+INFO: [Project 1-313] Project file moved from 'X:/1-Projiect/3-FPGA/POC_Design' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1821.457 ; gain = 377.691
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.512 ; gain = 331.102
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-[Mon Feb 24 23:33:34 2025] Launched synth_1...
-Run output will be captured here: X:/1-Projiect/3-FPGA/POC_Design/POC.runs/synth_1/runme.log
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-1
-Top: top
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25272
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2384.207 ; gain = 430.133
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'processor' [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/processor.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'processor' (0#1) [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/processor.v:23]
-INFO: [Synth 8-6157] synthesizing module 'POC' [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/POC.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'POC' (0#1) [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/POC.v:23]
-INFO: [Synth 8-6157] synthesizing module 'printer' [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/printer.v:23]
-WARNING: [Synth 8-6090] variable 'RDY' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/printer.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'printer' (0#1) [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/printer.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/top.v:23]
-WARNING: [Synth 8-7129] Port print_data[7] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[6] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[5] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[4] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[3] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[2] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[1] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port print_data[0] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[6] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[5] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[4] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[3] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[2] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[1] in module processor is either unconnected or has no load
-WARNING: [Synth 8-7129] Port D_b2a[0] in module processor is either unconnected or has no load
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2492.316 ; gain = 538.242
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2492.316 ; gain = 538.242
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2492.316 ; gain = 538.242
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2492.316 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2575.758 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2627.715 ; gain = 673.641
-14 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2627.715 ; gain = 806.258
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'POC_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'POC_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POC_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sources_1/new/POC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sources_1/new/printer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module printer
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sim_1/new/POC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module POC_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POC_test_behav xil_defaultlib.POC_test xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POC_test_behav xil_defaultlib.POC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.POC
+Compiling module xil_defaultlib.printer
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.POC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot POC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POC_test_behav -key {Behavioral:sim_1:Functional:POC_test} -tclbatch {POC_test.tcl} -view {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav.wcfg} -view {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav.wcfg
+WARNING: Simulation object /POC_test/switch was not found in the design.
+WARNING: Simulation object /POC_test/print was not found in the design.
+WARNING: Simulation object /POC_test/top_a/POC_a/SR was not found in the design.
+WARNING: Simulation object /POC_test/top_a/print was not found in the design.
+WARNING: Simulation object /POC_test/top_a/processor_a/Dout was not found in the design.
+open_wave_config X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg
+source POC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 850 ns : File "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sim_1/new/POC_test.v" Line 117
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1622.559 ; gain = 44.359
+save_wave_config {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'POC_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'POC_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POC_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POC_test_behav xil_defaultlib.POC_test xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POC_test_behav xil_defaultlib.POC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POC_test_behav -key {Behavioral:sim_1:Functional:POC_test} -tclbatch {POC_test.tcl} -view {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav.wcfg} -view {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav.wcfg
+WARNING: Simulation object /POC_test/switch was not found in the design.
+WARNING: Simulation object /POC_test/print was not found in the design.
+WARNING: Simulation object /POC_test/top_a/POC_a/SR was not found in the design.
+WARNING: Simulation object /POC_test/top_a/print was not found in the design.
+WARNING: Simulation object /POC_test/top_a/processor_a/Dout was not found in the design.
+open_wave_config X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg
+source POC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 850 ns : File "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sim_1/new/POC_test.v" Line 117
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+save_wave_config {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'POC_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'POC_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj POC_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POC_test_behav xil_defaultlib.POC_test xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: X:/0-NewSoftAddress/1-Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot POC_test_behav xil_defaultlib.POC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "POC_test_behav -key {Behavioral:sim_1:Functional:POC_test} -tclbatch {POC_test.tcl} -view {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav.wcfg} -view {X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav.wcfg
+WARNING: Simulation object /POC_test/switch was not found in the design.
+WARNING: Simulation object /POC_test/print was not found in the design.
+WARNING: Simulation object /POC_test/top_a/POC_a/SR was not found in the design.
+WARNING: Simulation object /POC_test/top_a/print was not found in the design.
+WARNING: Simulation object /POC_test/top_a/processor_a/Dout was not found in the design.
+open_wave_config X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC_test_behav1.wcfg
+source POC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 850 ns : File "X:/2-Github/POC_Design_Based_on_FPGA/Codes/POC.srcs/sim_1/new/POC_test.v" Line 117
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'POC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 24 23:38:40 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 25 23:28:50 2025...

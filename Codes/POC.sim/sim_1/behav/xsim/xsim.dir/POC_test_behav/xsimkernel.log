@@ -1,7 +1,7 @@
-Running: xsim.dir/POC_test_behav/xsimk.exe -simmode gui -wdb POC_test_behav.wdb -simrunnum 0 -socket 17214
+Running: xsim.dir/POC_test_behav/xsimk.exe -simmode gui -wdb POC_test_behav.wdb -simrunnum 0 -socket 51397
 Design successfully loaded
-Design Loading Memory Usage: 9272 KB (Peak: 9272 KB)
-Design Loading CPU Usage: 15 ms
+Design Loading Memory Usage: 9308 KB (Peak: 9308 KB)
+Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 9980 KB (Peak: 9980 KB)
-Simulation CPU Usage: 15 ms
+Simulation Memory Usage: 9948 KB (Peak: 9948 KB)
+Simulation CPU Usage: 0 ms
