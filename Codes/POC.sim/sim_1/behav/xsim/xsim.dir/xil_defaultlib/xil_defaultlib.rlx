@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+X:/1-Projiect/3-FPGA/POC_Design/POC.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sim_1/new/POC_test.v,1740406882,verilog,,,,POC_test,,,,,,,,
+X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/POC.v,1740410228,verilog,,X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/printer.v,,POC,,,,,,,,
+X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/printer.v,1740410228,verilog,,X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/processor.v,,printer,,,,,,,,
+X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/processor.v,1740409257,verilog,,X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/top.v,,processor,,,,,,,,
+X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sources_1/new/top.v,1740406455,verilog,,X:/1-Projiect/3-FPGA/POC_Design/POC.srcs/sim_1/new/POC_test.v,,top,,,,,,,,

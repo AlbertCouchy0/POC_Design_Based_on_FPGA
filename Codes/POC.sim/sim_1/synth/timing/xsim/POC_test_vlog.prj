@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"POC_test_time_synth.v" \
+"../../../../../POC.srcs/sim_1/new/POC_test.v" \
+
+# Do not sort compile order
+nosort
