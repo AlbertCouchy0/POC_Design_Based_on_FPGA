@@ -80,7 +80,7 @@ output reg [7:0] PD//Parallel Data，存储待打印的数据
         //10：等待打印机打印
         2'b10:
         begin
-            if(RDY == 0)//握手结束
+            if(RDY == 0)//握手结束,打印机打印
             begin
                 TR = 0;//终止打印请求脉冲
                 SR[7] = 1;//表示POC已经处理好数据，可以准备接收新数据

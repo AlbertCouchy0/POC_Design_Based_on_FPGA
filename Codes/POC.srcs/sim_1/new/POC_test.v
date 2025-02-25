@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//test
+
 
 module POC_test(
 
@@ -51,77 +51,68 @@ module POC_test(
     //设置仿真条件
     initial
     begin   
-      //第一次，查询方式(共耗时150ns)
+      //第一次，查询方式(共耗时300ns)
+      //刚开机
       Switch = 0;
+      print_flag = 1;
+      print_data[7:0] = 8'b00000000;
       #50
+      //输入第一组数据
       print_data[7:0] = 8'b10101010;
-      print_flag = 1;
       print_button = 1;
       #5
       print_button = 0;
       #45
-      print_flag = 0;
-      #50
-        
-      //第二次，中断模式(共耗时150ns)
-      Switch = 1;
-      #50
+      print_data[7:0] = 8'b00000000;
+      #75
+      //输入第二组数据
       print_data[7:0] = 8'b10111011;
-      print_flag = 1;
       print_button = 1;
       #5
       print_button = 0;
       #45
-      print_flag = 0;
-      #50
-
-      //第三次，查询方式(共耗时150ns)  
-      Switch = 0;
-      #50
+      print_data[7:0] = 8'b00000000;
+      #75
+      //第二次，中断方式(共耗时400ns)
+      //切换模式
+      Switch = 1;
+      #25
+      //输入第三组数据
       print_data[7:0] = 8'b11001100;
-      print_flag = 1;
       print_button = 1;
       #5
       print_button = 0;
       #45
-      print_flag = 0;
-      #50
-
-      //第四次，查询模式(共耗时150ns)  
-      Switch = 1;
-      #50
+      print_data[7:0] = 8'b00000000;
+      #75
+      //输入第四组数据
       print_data[7:0] = 8'b11011101;
-      print_flag = 1;
       print_button = 1;
       #5
       print_button = 0;
       #45
-      print_flag = 0;
-      #50
-
-      //第五次，中断方式(共耗时150ns) 
-      Switch = 1;
-      #50
+      print_data[7:0] = 8'b00000000;
+      #75
+      //输入第五组数据
       print_data[7:0] = 8'b11101110;
-      print_flag = 1;
       print_button = 1;
       #5
       print_button = 0;
       #45
-      print_flag = 0;
-      #50
-
-      //第六次，查询模式(共耗时150ns)  
+      print_data[7:0] = 8'b00000000;
+      #75
+      //第三次，查询方式(共耗时150ns)
+      //切换模式
       Switch = 0;
-      #50
+      #25
+      //输入第六组数据
       print_data[7:0] = 8'b11111111;
-      print_flag = 1;
       print_button = 1;
       #5
       print_button = 0;
       #45
-      print_flag = 0;
-      #50
+      print_data[7:0] = 8'b00000000;
+      #75
 
       $finish;
     end

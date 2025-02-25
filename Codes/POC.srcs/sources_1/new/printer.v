@@ -35,8 +35,12 @@ output reg [7:0] print_data_out
         begin
             RDY <= 0;
             print_data_out [7:0] <= PD[7:0];
-            #20//延迟20个时间单位,模拟打印过程
+            #50//延迟20个时间单位,模拟打印过程
             RDY = 1;//重新准备好
+        end
+        else
+        begin
+             print_data_out <= 0;
         end
     end
 endmodule
